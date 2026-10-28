@@ -1,0 +1,161 @@
+:root {
+  --madeira-escura: #3a2211;
+  --madeira: #6b4423;
+  --madeira-clara: #9a6a3c;
+  --palha: #f2cf73;
+  --papel: #f4e6c4;
+  --tinta: #2b1a0c;
+  --celeiro: #b5332a;
+  --pasto: #4f7f3a;
+
+  --fonte-titulo: 'Rye', 'Georgia', serif;
+  --fonte-texto: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+
+  color-scheme: light;
+}
+
+
+.home-hero{
+    display: flex;
+}
+.fazendeiro {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.fazendeiro img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: 50% 0;
+  border-radius: 50%;
+  border: 12px solid var(--madeira-clara);
+  box-shadow: 0 0 0 4px var(--madeira-escura), 0 18px 40px rgba(0, 0, 0, 0.45);
+  background: #87c8ea;
+}
+
+.fazendeiro figcaption {
+  display: inline-block;
+  margin-top: -1.4rem;
+  position: relative;
+  padding: 0.4rem 1rem;
+  background: var(--palha);
+  color: var(--tinta);
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  border-radius: 4px;
+  transform: rotate(-2deg);
+}
+
+.balao {
+  align-items: center;
+  background: var(--papel);
+  color: var(--tinta);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  max-height: 280px;
+}
+
+.balao::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 40%;
+  border: 14px solid transparent;
+  border-right: 22px solid var(--papel);
+  border-left: 0;
+}
+
+.balao h1 {
+  font-size: clamp(1.7rem, 3.6vw, 2.5rem);
+  margin-bottom: 0.8rem;
+}
+
+.balao p {
+  font-size: 1.1rem;
+  line-height: 1.55;
+  max-width: 60ch;
+  margin: 0 0 1.4rem;
+}
+
+.botoes {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.votarAgora {
+    background-color: rgb(209, 10, 10);
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 6px rgb(139, 8, 8);
+    border: none;
+}
+
+.parcial {
+    width: 200px;
+    height: 40px;
+     border-radius: 10px;
+    background: transparent;
+  color: var(--tinta);
+  box-shadow: inset 0 0 0 2px var(--tinta);
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-titulo);
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.home-acoes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.home-roca-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.home-roca h2 {
+  color: var(--palha);
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.home-roca-lista li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.4rem 1rem 0.4rem 0.4rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid var(--celeiro);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.home-roca-lista img {
+  width: 80px;
+  height: 45px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    
+}
